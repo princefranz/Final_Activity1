@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <p> Student ID#        : <a id="demo"></a> </p>
+	<p> Student First Name : <a id="demo1"> </p> </a>
+	<p> Student Last Name  : <a id="demo2"></a> </p>
+	<p> Student Grade      : <a id="demo3"></a></p>
+	<p style="color: red" id="red"> </p>
+	<P style="color: blue" id="blue"> </p>
+
+
+		<script type="text/javascript">
+var a=prompt("Enter Student Id#: ");
+var b=prompt("Enter First Name: ");
+var c=prompt("Enter Last name");
+var d=prompt("Enter Student Grade: ");			
+
+
+
+if(d%2==0 && d<=3 )
+{
+ document.getElementById("red").innerHTML="PASSED" + "             " + "EVEN"
+
+}
+else if(d%2==0 && d>3)
+{
+	document.getElementById("red").innerHTML="FAILED" + "          " + "EVEN"
+}
+else if(d%2==1&& d<=3)
+{
+	document.getElementById("blue").innerHTML="PASSED "+ "         " + "ODD"
+
+}
+else if(d%2==1 && d>3)
+{
+	document.getElementById("blue").innerHTML="FAILED" + "         " + "ODD"
+}
+    document.getElementById("demo").innerHTML=a;
+    document.getElementById("demo1").innerHTML=b;
+    document.getElementById("demo2").innerHTML=c;
+   
+		</script>
+
+</body>
+</html>
